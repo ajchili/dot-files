@@ -1,0 +1,82 @@
+[user]
+	name = Kirin Patel
+	email = kirinpatel@gmail.com
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = vim
+	compression = 9
+	whitespace = error
+	preloadindex = true
+
+[advice]
+	addEmptyPathspec = false
+	pushNonFastForward = false
+	statusHints = false
+
+[status]
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
+
+[diff]
+	context = 3
+	renames = copies
+	interHunkContext = 10
+
+[commit]
+	template = ~/.config/git/template
+
+[push]
+	autoSetupRemote = true
+	default = current
+	followTags = true
+
+[pull]
+	default = current
+	rebase = true
+
+[rebase]
+	autoStash = true
+	missingCommitsCheck = warn
+
+[log]
+	abbrevCommit = true
+	graphColors = blue,yellow,cyan,magenta,green,red
+
+[color "decorate"]
+	HEAD = red
+	branch = blue
+	tag = yellow
+	remoteBranch = magenta
+
+[color "branch"]
+	current = magenta
+	local = default
+	remote = yellow
+	upstream = green
+	plain = blue
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	sort = -taggerdate
+
+[pager]
+	branch = false
+	tag = false
+
+[url "git@github.com:"]
+	insteadOf = "gh:"
+
+[url "git@github.com:ajchili"]
+	insteadOf = "kp:"
+
+[url "git@github.com:datavant"]
+	insteadOf = "dv:"
+
+[url "git@github.com:fanful-all"]
+	insteadOf = "fan:"
