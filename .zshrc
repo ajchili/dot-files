@@ -1,3 +1,9 @@
+# ZSH configuration
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="simple"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
 # Aliases: git
 alias ga='git add'
 alias gap='ga --patch'
@@ -18,5 +24,3 @@ alias gp='git push'
 alias gr='git reset'
 alias gs='git status --short'
 alias gu='git pull'
-
-gcm() { git commit --message "$*" }
