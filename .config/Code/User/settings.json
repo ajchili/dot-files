@@ -1,0 +1,32 @@
+{
+  /* VSCode Settings */
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.insertSpaces": false,
+  "editor.rulers": [100],
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 100,
+  "files.autoSave": "onFocusChange",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  "editor.stickyScroll.enabled": true,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.colorTheme": "One Dark Pro Mix",
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  /* Language Specific Settings */
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  /* Error Lens Settings */
+  "errorLens.excludeByMessage": ["Unknown word"]
+}
