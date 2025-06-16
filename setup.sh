@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ln -sf "$PWD/.config/git" ~/.git
+ln -sf "$PWD/.config/git" ~/.config/git
 
 dot_files=(".vimrc" ".zshrc")
 for file in "${dot_files[@]}"; do
