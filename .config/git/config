@@ -72,11 +72,11 @@
 [url "git@github.com:"]
 	insteadOf = "gh:"
 
-[url "git@github.com:ajchili"]
+[url "git@github.com:ajchili/"]
 	insteadOf = "kp:"
 
-[url "git@github.com:datavant"]
+[url "git@github.com:datavant/"]
 	insteadOf = "dv:"
 
-[url "git@github.com:fanful-all"]
+[url "git@github.com:fanful-all/"]
 	insteadOf = "fan:"
