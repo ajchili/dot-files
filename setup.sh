@@ -22,7 +22,8 @@ extensions=("esbenp.prettier-vscode" \
     "oderwat.indent-rainbow" \
     "gruntfuggly.todo-tree" \
     "mhutchie.git-graph" \
-    "vscode-icons-team.vscode-icons")
+    "vscode-icons-team.vscode-icons" \
+    "JoseVSeb.google-java-format-for-vs-code")
 
 for extension in "${extensions[@]}"; do
     code --install-extension "$extension"
