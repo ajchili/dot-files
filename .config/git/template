@@ -1,25 +1,10 @@
-# Personal commit template
-
-# 🐛 initial commit
-# 🤩
-# 🔧
-# 💅
-# 🧹
-# 🗑️
-# 📰
+# fix:
+# feat:
+# BREAKING CHANGE:
+# chore:
 
 # Datavant commit template
 
-# [feat]: [HEAL-#] 🤩
-# [fix]: [HEAL-#] 🔧
-# [chore]: [HEAL-#] 🔧
-# [chore]: [HEAL-#] 💅
-# [chore]: [HEAL-#] 🧹
-# [chore]: [HEAL-#] 🗑️
-# [chore]: [HEAL-#] 📰
-
-# Fanful commit template
-
-# feat:
-# fix:
-# chore:
+# feat: [HSA-#]
+# fix: [HSA-#]
+# chore: [HSA-#]
