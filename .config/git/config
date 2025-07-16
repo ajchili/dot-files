@@ -6,7 +6,7 @@
 	defaultBranch = main
 
 [core]
-	editor = vim
+	editor = hx
 	compression = 9
 	whitespace = error
 	preloadindex = true
