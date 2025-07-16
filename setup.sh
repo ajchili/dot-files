@@ -1,6 +1,9 @@
 #!/bin/bash
 
+mkdir -p ~/.config
+
 ln -sf "$PWD/.config/git" ~/.config/git
+ln -sf "$PWD/.config/helix" ~/.config/helix
 
 dot_files=(".vimrc" ".zshrc")
 for file in "${dot_files[@]}"; do
@@ -36,3 +39,9 @@ for theme in "${themes[@]}"; do
 done
 
 cp -r .config/Code ~/Library/Application\ Support
+
+# hx
+brew install helix
+# hx language servers
+brew install marksman jdtls ruff
+npm i -g typescript typescript-language-server vscode-langservers-extracted
