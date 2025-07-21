@@ -6,3 +6,12 @@ mouse = false
 
 [editor.file-picker]
 hidden = false
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.whitespace]
+render = "all"
+
+[editor.indent-guides]
+render = true
