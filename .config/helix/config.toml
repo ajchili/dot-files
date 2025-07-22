@@ -3,6 +3,10 @@ theme = "onedark"
 [editor]
 line-number = "relative"
 mouse = false
+end-of-line-diagnostics = "hint"
+
+[editor.soft-wrap]
+enable = true
 
 [editor.file-picker]
 hidden = false
@@ -10,8 +14,11 @@ hidden = false
 [editor.auto-save]
 focus-lost = true
 
-[editor.whitespace]
-render = "all"
-
 [editor.indent-guides]
 render = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[keys.normal.g]
+o = ":sh gh browse %{buffer_name}:%{cursor_line}" # Goto line in browser on Github.com
