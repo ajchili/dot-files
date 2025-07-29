@@ -4,6 +4,7 @@ mkdir -p ~/.config
 
 ln -sf "$PWD/.config/git" ~/.config/git
 ln -sf "$PWD/.config/helix" ~/.config/helix
+ln -sf "$PWD/.config/ghostty" ~/.config/ghostty
 
 dot_files=(".tmux.conf" ".vimrc" ".zshrc")
 for file in "${dot_files[@]}"; do
