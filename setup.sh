@@ -41,6 +41,7 @@ done
 
 cp -r .config/Code ~/Library/Application\ Support
 
+brew install jj
 # hx
 brew install helix
 # hx language servers
