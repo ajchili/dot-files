@@ -4,6 +4,9 @@ ZSH_THEME="simple"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+# Aliases: jj
+alias jjw='watch --color jj --ignore-working-copy log --color=always'
+
 # Aliases: git
 alias ga='git add'
 alias gap='ga --patch'
