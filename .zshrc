@@ -6,6 +6,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases: jj
 alias jjw='watch --color jj --ignore-working-copy log --color=always'
+alias jjc='jj desc -m'
+alias jjp='jj git push'
+alias jjb='jj bookmark'
 
 # Aliases: git
 alias ga='git add'
