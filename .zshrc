@@ -5,10 +5,12 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Aliases: jj
-alias jjw='watch --color jj --ignore-working-copy log --color=always'
-alias jjc='jj desc -m'
-alias jjp='jj git push'
-alias jjb='jj bookmark'
+alias jw='watch --color jj --ignore-working-copy log --color=always'
+alias jc='jj desc -m'
+alias jp='jj git push'
+alias jb='jj bookmark'
+alias js='jj st'
+alias ju='jj git fetch && jj rebase --branch "all:visible_heads() & mine()" --destination main && jj new main'
 
 # Aliases: git
 alias ga='git add'
