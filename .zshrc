@@ -33,3 +33,6 @@ alias gr='git reset'
 alias gs='git status --short'
 alias gu='git pull'
 alias repo-size='git ls-files | xargs wc -l'
+
+# Aliases: npm
+alias ns='cat package.json | jq .scripts'
