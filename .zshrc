@@ -11,6 +11,7 @@ alias jw='watch --color jj --ignore-working-copy log --color=always'
 alias jc='jj desc -m'
 alias jp='jj git push'
 alias jb='jj bookmark'
+alias jbm='jj bookmark move'
 alias js='jj st'
 alias ju='jj git fetch && jj rebase --branch "all:visible_heads() & mine()" --destination main && jj new main'
 
