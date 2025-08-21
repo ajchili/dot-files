@@ -7,6 +7,10 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Aliases: jj
+__jbm() {
+	jj bookmark move "$1" --to="$2";
+}
+
 alias jw='watch --color jj --ignore-working-copy log --color=always'
 alias jc='jj desc -m'
 alias jp='jj git push'
@@ -15,6 +19,7 @@ alias jbm='jj bookmark move'
 alias js='jj st'
 alias ju='jj git fetch && jj rebase --branch "all:visible_heads() & mine()" --destination main && jj new main'
 alias jcs='jj split --interactive'
+alias jbm=__jbm
 
 # Aliases: git
 alias ga='git add'
