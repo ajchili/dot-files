@@ -14,6 +14,7 @@ alias jb='jj bookmark'
 alias jbm='jj bookmark move'
 alias js='jj st'
 alias ju='jj git fetch && jj rebase --branch "all:visible_heads() & mine()" --destination main && jj new main'
+alias jcs='jj split --interactive'
 
 # Aliases: git
 alias ga='git add'
