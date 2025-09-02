@@ -6,6 +6,9 @@ ZSH_THEME="simple"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+export PATH="$HOME/.local/bin:$PATH"
+source ~/workspace/proj/proj.zsh
+
 # Aliases: jj
 __jbm() {
 	jj bookmark move "$1" --to="$2";
@@ -42,6 +45,14 @@ alias gr='git reset'
 alias gs='git status --short'
 alias gu='git pull'
 alias repo-size='git ls-files | xargs wc -l'
+alias repo-root='git rev-parse --show-toplevel'
 
 # Aliases: npm
 alias ns='cat package.json | jq .scripts'
+
+# mise
+eval "$(mise activate zsh)"
+
+# zoxide
+source <(fzf --zsh)
+eval "$(zoxide init zsh)"

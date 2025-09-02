@@ -1,0 +1,2 @@
+[aliases]
+test = ['watch', '--color', 'jj', '--ignore-working-copy', 'log', '--color=always']
