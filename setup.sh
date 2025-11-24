@@ -4,6 +4,7 @@ mkdir -p ~/.config
 
 if [ ! -e ~/.config/fish ]; then
     ln -sf "$PWD/.config/fish/config.fish" ~/.config/fish/config.fish
+    ln -sf "$PWD/.config/fish/functions/nvm.fish" ~/.config/fish/functions/nvm.fish
 fi
 if [ ! -e ~/.config/git ]; then
     ln -sf "$PWD/.config/git" ~/.config/git
