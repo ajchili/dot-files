@@ -2,9 +2,15 @@
 
 mkdir -p ~/.config
 
-ln -sf "$PWD/.config/git" ~/.config/git
-ln -sf "$PWD/.config/helix" ~/.config/helix
-ln -sf "$PWD/.config/ghostty" ~/.config/ghostty
+if [ ! -e ~/.config/fish ]; then
+    ln -sf "$PWD/.config/fish/config.fish" ~/.config/fish/config.fish
+fi
+if [ ! -e ~/.config/git ]; then
+    ln -sf "$PWD/.config/git" ~/.config/git
+fi
+if [ ! -e ~/.config/ghostty ]; then
+    ln -sf "$PWD/.config/ghostty" ~/.config/ghostty
+fi
 
 dot_files=(".tmux.conf" ".vimrc" ".zshrc")
 for file in "${dot_files[@]}"; do
@@ -42,8 +48,3 @@ done
 cp -r .config/Code ~/Library/Application\ Support
 
 brew install jj
-# hx
-brew install helix
-# hx language servers
-brew install marksman jdtls ruff
-npm i -g typescript typescript-language-server vscode-langservers-extracted
