@@ -10,5 +10,7 @@ switch (uname)
         eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 end
 
-set PATH $PATH "$HOME/.local/bin"
 set -gx NVM_DIR "$HOME/.nvm"
+set -gx EDITOR "vim"
+set -gx VISUAL "vim"
+set PATH "$HOME/.local/bin" $PATH
