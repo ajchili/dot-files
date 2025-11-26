@@ -11,3 +11,4 @@ switch (uname)
 end
 
 set PATH $PATH "$HOME/.local/bin"
+set -gx NVM_DIR "$HOME/.nvm"

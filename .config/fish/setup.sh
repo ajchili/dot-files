@@ -2,3 +2,4 @@
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 # https://github.com/edc/bass
 omf install bass
+omf install nvm
