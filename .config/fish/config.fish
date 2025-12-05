@@ -16,3 +16,5 @@ set -gx VISUAL "vim"
 set PATH "$HOME/.local/bin" $PATH
 
 starship init fish | source
+direnv hook fish | source
+fzf --fish | source

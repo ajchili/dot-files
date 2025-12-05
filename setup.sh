@@ -56,4 +56,4 @@ done
 
 cp -r .config/Code ~/Library/Application\ Support
 
-brew install jj
+brew install jj fzf
