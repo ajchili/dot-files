@@ -14,3 +14,5 @@ set -gx NVM_DIR "$HOME/.nvm"
 set -gx EDITOR "vim"
 set -gx VISUAL "vim"
 set PATH "$HOME/.local/bin" $PATH
+
+starship init fish | source

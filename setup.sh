@@ -12,6 +12,10 @@ if [ ! -e ~/.config/ghostty ]; then
     ln -sf "$PWD/.config/ghostty" ~/.config/ghostty
 fi
 
+if [ ! -e ~/.config/starship.toml ]; then
+    ln -sf "$PWD/.config/starship.toml" ~/.config/starship.toml
+fi
+
 ln -sf "$PWD/.config/nvim" ~/.config/nvim
 
 dot_files=(".tmux.conf" ".vimrc" ".zshrc")
