@@ -1,0 +1,7 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+
+[ui]
+diff-fromatter = ['delta', '$left', '$right']
+
+[aliases]
+test = ['watch', '--color', 'jj', '--ignore-working-copy', 'log', '--color=always']
