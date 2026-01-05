@@ -37,7 +37,7 @@ jj log --revisions @ --no-graph --ignore-working-copy --color always --limit 1 -
     concat(
       if(empty || description.len() > 0, raw_escape_sequence("\x1b[1;32m"), raw_escape_sequence("\x1b[1;33m")),
       coalesce(
-        description.first_line(),
+        truncate_end(29, description.first_line(), "…"),
         "(no description set)",
       ),
       raw_escape_sequence("\x1b[0m")
