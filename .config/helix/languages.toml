@@ -1,0 +1,77 @@
+[[language]]
+name = "java"
+language-servers = [ "jdtls", "cspell" ]
+
+[[language]]
+name = "javascript"
+language-servers = [ "typescript-language-server", "cspell" ]
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "babel"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "cspell" ]
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "babel"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+language-servers = [ "typescript-language-server", "cspell" ]
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "cspell" ]
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "json"] }
+auto-format = true
+
+[[language]]
+name = "jsonc"
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "json"] }
+auto-format = true
+
+[[language]]
+name = "css"
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "css"] }
+auto-format = true
+
+[[language]]
+name = "scss"
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "scss"] }
+auto-format = true
+
+[[language]]
+name = "html"
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "html"] }
+auto-format = true
+
+[[language]]
+name = "yaml"
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "yaml"] }
+auto-format = true
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman", "cspell" ]
+formatter = { command = "npx", args = ["--no-install", "prettier", "--parser", "markdown"] }
+auto-format = true
+
+[[language]]
+name = "python"
+language-servers = [ "ruff", "cspell" ]
+formatter = { command = "ruff", args = ["format", "-"] }
+auto-format = true
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[language-server.cspell]
+command = "cspell-lsp"
+args = ["--stdio"]
