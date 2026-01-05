@@ -11,6 +11,9 @@ fi
 if [ ! -e ~/.config/ghostty ]; then
     ln -sf "$PWD/.config/ghostty" ~/.config/ghostty
 fi
+if [ ! -e ~/.config/jj/config.toml ]; then
+	  ln -sf "$PWD/.config/jj/config.toml" ~/.comfig/jj/config.toml
+fi
 
 if [ ! -e ~/.config/starship.toml ]; then
     ln -sf "$PWD/.config/starship.toml" ~/.config/starship.toml
